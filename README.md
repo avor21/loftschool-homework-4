@@ -1,68 +1,17 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Homework 4
 
-## Available Scripts
+Скопируйте этот репозиторий.
 
-In the project directory, you can run:
+[Пример работы](http://5a0ad5aadf99536a88d36117.tycoon-moneys-57286.netlify.com).
 
-### `npm start`
+Задачи:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Создать компонент `Switcher`, который рендерит только одного ребенка, а так же показывает список имен всех детей, и если кликнуть на имя одного из детей — компонент покажет другого ребенка.
+2. Создать компонент `CardNumberHolder` который будет хранить номер карты и рендерить компонент `CardNumberInput`.
+3. Создать компонент `CardNumberInput`, который будет возвращать input и форматировать его значение при вводе, расставляя пробелы после каждого 4 символа, и нормализовать значение удаляя пробелы, при измении и передавая нормализованную строку в `props.onChange`.
+4. Создать компонент `ModalButton`, который выводит кнопку, при нажатии на которую появляется модальное окно, которое должно быть отрендерено в `#modal`. В модальном окне должна быть кнопка закрытия окна, при нажатии на которую окно закрывается.
+5. Тесты должны исполнятся.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Для установления имени у компоненты используйте ```static displayName = 'Name'```.
+Для работы с детьми нужно использовать методы `React.Children.map` и `React.Children.toArray`.
+Модальное окно нужно выводить с помощью порталов.
