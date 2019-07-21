@@ -19,7 +19,7 @@ class Switcher extends Component {
         <nav>
           <ul className="component-list">
             {React.Children.map(children, child => (
-              <li className="component-list__name">{child.type.name}</li>
+              <li className="component-list__name">{child.type.displayName}</li>
             ))}
           </ul>
         </nav>
