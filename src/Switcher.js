@@ -9,12 +9,6 @@ class Switcher extends Component {
     selectedComponent: 0
   };
 
-  componentDidMount() {
-    React.Children.forEach(this.props.children, child => {
-      console.log('name=', child.type.name);
-    });
-  }
-
   handleClickOnComponentName = event => {
     const newValue = event.target.getAttribute('data-id');
     this.setState({ selectedComponent: newValue });
