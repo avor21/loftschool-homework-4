@@ -17,8 +17,9 @@ class CardNumberHolder extends Component {
 
     return (
     <div>
-      <CardNumberInput cardNumber={cardNumber}
-                       onChange={this.handleChangeNumberInput} />
+      <CardNumberInput
+        cardNumber={cardNumber}
+        onChange={this.handleChangeNumberInput} />
     </div>
     );
   }
